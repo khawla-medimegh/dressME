@@ -108,7 +108,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="18dp"
             android:background="#00000000"
-            android:backgroundTint="#cd918e"
+            android:backgroundTint="#F2CD918E"
             android:gravity="center"
             android:text="command"
             android:textColor="#fff"
