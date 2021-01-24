@@ -96,7 +96,7 @@ public class fragment_progressactivite extends Fragment {
                     docRef.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void aVoid) {
-                            Toast.makeText(getContext(), "DONE!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getContext(), "DONE !", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
