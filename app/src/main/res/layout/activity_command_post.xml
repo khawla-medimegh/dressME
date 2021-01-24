@@ -56,12 +56,12 @@
                 android:layout_marginBottom="204dp"
 
                 android:background="#00000000"
-                android:backgroundTint="#32FF5607"
+                android:backgroundTint="#40FF5607"
                 android:text="order"
                 android:textColor="#F5F5F5"
                 android:textSize="24dp"
                 android:textStyle="bold|italic"
-                app:layout_constraintHorizontal_bias="0.483"/>
+                app:layout_constraintHorizontal_bias="0.483" />
         </LinearLayout>
 
     </LinearLayout>
