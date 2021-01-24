@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".customHP">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_marginBottom="391dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/itemm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="414dp"
+            android:layout_height="490dp"
+            android:layout_marginTop="285dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/shapee"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Enter your best masterpieces ! "
+                android:textColor="#B0000000"
+                android:textSize="23sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="40dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgt"
+                            android:layout_width="45dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="9dp"
+
+                            app:civ_border_color="#43000000"
+                            app:civ_border_width="1.5dp" />
+
+                        <TextView
+                            android:id="@+id/nomtl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="14dp"
+
+                            android:textColor="#9F000000"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="290dp"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="#27000000" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp">
+
+                            <ImageView
+                                android:id="@+id/imgp1"
+                                android:layout_width="123dp"
+                                android:layout_height="110dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/add" />
+
+                            <ImageView
+                                android:id="@+id/imgp2"
+                                android:layout_width="125dp"
+                                android:layout_height="110dp"
+                                android:layout_below="@+id/imgp1"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="7dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/add" />
+
+                            <ImageView
+                                android:id="@+id/imgp3"
+                                android:layout_width="141dp"
+                                android:layout_height="225dp"
+
+                                android:layout_marginLeft="27dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_toRightOf="@id/imgp1"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/add" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/conf_cust"
+                android:layout_width="115dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#cd918e"
+                android:text="confirm"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

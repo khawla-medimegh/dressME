@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/coloor"
+    tools:context=".postthis">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/close_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingRight="360dp"
+            android:src="@drawable/ic_close" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imagePost"
+            android:layout_width="278dp"
+            android:layout_height="277dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/descriptionPost"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="20dp"
+            android:textColor="#B0000000"
+            android:textColorHint="#000000"
+            android:textSize="26dp" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="345dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+
+            android:background="#27000000" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="17dp"
+                    android:src="@drawable/shopping" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You like it ?"
+                        android:textColor="#BE000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:text="You could have it too !"
+                        android:textColor="#7A000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Order NOW !"
+                        android:textSize="19dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/commandPost"
+            android:layout_width="154dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:backgroundTint="#cd918e"
+            android:gravity="center"
+            android:text="command"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:iconTint="#cd918e"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="101dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

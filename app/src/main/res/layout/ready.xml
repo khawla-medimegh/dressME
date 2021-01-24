@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_height="500dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imaReady"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:src="@drawable/ready"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="0dp" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/closeReady"
+                    android:layout_width="34dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="130dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewReady"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/closeee"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/doneReady"
+                    android:layout_width="188dp"
+                    android:layout_height="62dp"
+                    android:layout_marginStart="81dp"
+                    android:layout_marginTop="126dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/done"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewReady"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/address"
+                    android:layout_width="293dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginBottom="2dp"
+                    android:hint="Adress"
+                    android:textColorHint="#59171616"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/Date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewReady"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textViewReady"
+                    android:layout_width="278dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="Enter the address and the time to meet your client ! "
+                    android:textColor="#eeaa96"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/address"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/doneReady"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/Date"
+                    android:layout_width="293dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginBottom="4dp"
+                    android:ems="10"
+                    android:hint="Date"
+                    app:layout_constraintBottom_toTopOf="@+id/Time"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/address"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/Time"
+                    android:layout_width="294dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="33dp"
+                    android:layout_marginBottom="17dp"
+                    android:ems="10"
+                    android:hint="Time"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonReady"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Date"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/buttonReady"
+                    android:layout_width="169dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="93dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="88dp"
+                    android:layout_marginBottom="29dp"
+
+                    android:backgroundTint="#32FF5607"
+                    android:text="Confirm"
+                    android:textColor="#F5F5F5"
+                    android:textSize="22dp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Time"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

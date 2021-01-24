@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mesure1"
+    android:orientation="vertical"
+    tools:context=".AddCommand">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingLeft="30dp"
+        android:paddingTop="50dp"
+        android:layout_marginTop="300dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add your measurements"
+
+            android:textColor="#eeaa96"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/mesures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:hint="Measurements here"
+                android:maxLines="5"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <Button
+                android:id="@+id/orderPost"
+                android:layout_width="169dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="91dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="89dp"
+                android:layout_marginBottom="204dp"
+
+                android:background="#00000000"
+                android:backgroundTint="#32FF5607"
+                android:text="order"
+                android:textColor="#F5F5F5"
+                android:textSize="24dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintHorizontal_bias="0.483"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

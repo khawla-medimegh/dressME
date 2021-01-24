@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpTailor"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="298dp"
+            android:layout_marginBottom="433dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="525dp"
+            android:layout_marginTop="206dp"
+            android:background="@drawable/shapee"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:hint="Fullname"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="#8A0B0A0A"
+                app:boxStrokeColor="#0B0A0A"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="#0B0A0A">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regTail_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="#8A0B0A0A"
+                app:boxStrokeColor="#0B0A0A"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="#0B0A0A">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regTail_Username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="#8A0B0A0A"
+                app:boxStrokeColor="#0B0A0A"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="#0B0A0A">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regTail_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="#8A0B0A0A"
+                app:boxStrokeColor="#0B0A0A"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="#0B0A0A">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regTail_PhoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="#8A0B0A0A"
+                app:boxStrokeColor="#0B0A0A"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="#0B0A0A"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#0B0A0A">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regTail_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/regTail_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#CDCD978E"
+                android:text="Sign Up as Tailor"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/loginTail_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#fff"
+                android:onClick="callLoginScreent"
+                android:outlineSpotShadowColor="#00000000"
+                android:text="ALREADY HAVE AN ACCOUNT? LOGIN"
+                android:textColor="#F7AA8B2D" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logTail_image"
+            android:layout_width="275dp"
+            android:layout_height="173dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="492dp"
+            android:contentDescription="@string/todo"
+            android:paddingTop="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

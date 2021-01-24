@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="23dp"
+    android:layout_marginRight="40dp"
+    app:cardCornerRadius="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/custom_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="9dp"
+
+                app:civ_border_color="#43000000"
+                app:civ_border_width="1.5dp" />
+
+            <TextView
+                android:id="@+id/custom_nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="18dp"
+
+                android:textColor="#9F000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vieew"
+            android:layout_width="290dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="7dp"
+            android:background="#27000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+
+                <ImageView
+                    android:id="@+id/custom_imgp1"
+                    android:layout_width="123dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/add" />
+
+                <ImageView
+                    android:id="@+id/custom_imgp2"
+                    android:layout_width="125dp"
+                    android:layout_height="110dp"
+                    android:layout_below="@+id/custom_imgp1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="7dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/add" />
+
+                <ImageView
+                    android:id="@+id/custom_imgp3"
+                    android:layout_width="141dp"
+                    android:layout_height="227dp"
+
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/custom_imgp1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/add" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

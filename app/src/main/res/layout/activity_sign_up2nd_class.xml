@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp2ndClass"
+    android:orientation="vertical"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="293dp">
+
+
+        <ImageView
+            android:layout_width="411dp"
+            android:layout_height="237dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="55dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/topf"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/logo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="228dp"
+            android:layout_marginBottom="186dp"
+            android:fontFamily="@font/courgette"
+            android:paddingTop="25dp"
+            android:paddingBottom="-10dp"
+            android:text="Welcome"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="40sp"
+            android:transitionName="logo_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/slogan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="107dp"
+
+            android:layout_marginEnd="255dp"
+            android:layout_marginBottom="146dp"
+            android:backgroundTint="#fff"
+            android:fontFamily="@font/andika"
+            android:paddingTop="-8dp"
+            android:text="Sign Up to start"
+            android:textColor="#37020202"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="248dp"
+            android:layout_height="154dp"
+
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="117dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="22dp"
+            android:contentDescription="@string/todo"
+            android:paddingTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"
+            android:transitionName="logo_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="285dp"
+        android:layout_height="227dp"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        app:cardCornerRadius="25dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:padding="5dp"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="250dp">
+
+
+            <LinearLayout
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="22dp"
+
+                    android:text="Are you ... ?"
+                    android:textColor="#8E4E45"
+                    android:textSize="30sp" />
+
+                <RadioGroup
+                    android:id="@+id/radGroup"
+                    android:layout_width="189dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radTailor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginRight="70dp"
+                        android:buttonTint="@color/cardview_dark_background"
+                        android:text="Tailor"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="22sp" />
+
+                    <RadioButton
+                        android:id="@+id/radClient"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/cardview_dark_background"
+
+
+                        android:text="Client"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="22sp" />
+                </RadioGroup>
+
+                >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/home_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#000000"
+                android:backgroundTint="#CDCD978E"
+                android:onClick="callNextSignupScreen"
+                android:text="NEXT"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:transitionName="transition_next_btn" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="118dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        android:background="#00000000"
+        android:backgroundTint="#00000000"
+        android:onClick="returnLoginScreen"
+        android:text="LOGIN"
+        android:textColor="@color/colorAccent"
+        android:textSize="17dp"
+        android:transitionName="transition_login_btn" />
+
+    <ImageView
+        android:layout_width="176dp"
+        android:layout_height="122dp"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/cisc" />
+</LinearLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".SettingsClient">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#608A3933">
+                <TextView
+                    android:id="@+id/lo_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/acme"
+                    android:gravity="center"
+                    android:text="Settings        "
+                    android:textColor="#D3FAFAFA"
+                    android:textSize="30sp" />
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="661dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="301dp"
+            android:layout_marginBottom="360dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vintage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="455dp"
+            android:layout_height="450dp"
+            android:layout_marginTop="226dp"
+            android:background="@drawable/shapee"
+            android:layout_marginRight="40dp"
+
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="67dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="60dp"
+                android:paddingRight="20dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Fullname"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColorHint="#A60B0A0A"
+                    app:boxStrokeColor="#0B0A0A"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:hintTextColor="#6A0B0A0A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fullname_client"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#AE000000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColorHint="#A60B0A0A"
+                    app:boxStrokeColor="#0B0A0A"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:hintTextColor="#0B0A0A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username_client"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="#000000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColorHint="#A60B0A0A"
+                    app:boxStrokeColor="#0B0A0A"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:hintTextColor="#0B0A0A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email_client"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColorHint="#A60B0A0A"
+                    app:boxStrokeColor="#0B0A0A"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:hintTextColor="#0B0A0A">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/phone_client"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:textColor="#000000" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/reset_passwordclient"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#000"
+                    android:backgroundTint="#fff"
+                    android:text="Reset Password"
+                    android:textAlignment="viewStart"
+                    android:textColor="#E89C7E23"
+                    android:textStyle="normal"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/confirm_buttonclient"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="27dp"
+                android:background="#00000000"
+                android:backgroundTint="#C1C6644E"
+                android:gravity="center"
+                android:text="Update"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="349dp"
+            android:layout_marginBottom="312dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/client_image"
+                android:layout_width="207dp"
+                android:layout_height="141dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="101dp"
+                android:layout_marginTop="146dp"
+                android:layout_marginEnd="103dp"
+                android:layout_marginBottom="62dp"
+                android:scaleType="centerCrop"
+                app:civ_border_color="#fff"
+                app:civ_border_width="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/changePicture"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="243dp"
+                android:layout_marginTop="240dp"
+                android:layout_marginEnd="133dp"
+                android:layout_marginBottom="74dp"
+                android:src="@drawable/ic_menu_camera"
+                app:iconTint="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_height="310dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imageViewp"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/nice"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textViewp"
+                android:layout_width="272dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="133dp"
+                android:layout_marginEnd="29dp"
+                android:layout_marginBottom="93dp"
+                android:background="#12171717"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:text="Do you accept this price ? "
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/prixxp"
+                android:layout_width="177dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="87dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="86dp"
+                android:layout_marginBottom="222dp"
+                android:src="@drawable/price"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/closep"
+                android:layout_width="34dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="301dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="253dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/closeee" />
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="96dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="251dp"
+                android:layout_marginEnd="196dp"
+                android:layout_marginBottom="11dp"
+                android:backgroundTint="#CB4CAF50"
+                android:text="yes"
+                android:textColor="#F5F5F5"
+                android:textSize="24dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="96dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="205dp"
+                android:layout_marginTop="251dp"
+                android:layout_marginEnd="49dp"
+                android:layout_marginBottom="11dp"
+                android:backgroundTint="#cd918e"
+                android:text="no"
+                android:textColor="#F5F5F5"
+                android:textSize="24dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/acme</item>
+        <item>@font/amita</item>
+        <item>@font/andika</item>
+        <item>@font/antic</item>
+        <item>@font/bungee</item>
+        <item>@font/courgette</item>
+        <item>@font/muli</item>
+        <item>@font/muli_black</item>
+        <item>@font/muli_bold</item>
+    </array>
+</resources>

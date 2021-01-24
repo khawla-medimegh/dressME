@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "466107814607",
+    "firebase_url": "https://dressme-c70f6-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "dressme-c70f6",
+    "storage_bucket": "dressme-c70f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466107814607:android:a98a6e3b48c12c24b29dba",
+        "android_client_info": {
+          "package_name": "com.example.dressme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466107814607-j8raf06c1l21gakhdut4fhnguasvjfkq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMX9WSjvW_rpzwuiuhE_OfJ4vGemlqFYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466107814607-j8raf06c1l21gakhdut4fhnguasvjfkq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
