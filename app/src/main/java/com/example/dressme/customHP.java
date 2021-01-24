@@ -293,7 +293,7 @@ public class customHP extends AppCompatActivity {
         if (appear.equals("no")) {
 
             if ("".equals(Url1) && "".equals(Url2) && "".equals(Url3)) {
-                Toast.makeText(customHP.this, "You have to add 3 pictures to appear to clients!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(customHP.this, "You have to add 3 pictures to appear for your clients !", Toast.LENGTH_SHORT).show();
             }
 
             if (!"".equals(Url1) && !"".equals(Url2) && !"".equals(Url3)) {
