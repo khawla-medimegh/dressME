@@ -11,13 +11,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="34dp">
+        android:paddingTop="30dp">
 
         <ImageView
             android:id="@+id/close_post"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingRight="365dp"
+            android:paddingRight="360dp"
             android:src="@drawable/ic_close" />
 
     </RelativeLayout>
