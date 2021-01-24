@@ -11,7 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="30dp">
+        android:paddingTop="35dp">
 
         <ImageView
             android:id="@+id/close_post"
