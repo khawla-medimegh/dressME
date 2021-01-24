@@ -36,8 +36,8 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:layout_width="125dp"
-        android:layout_height="96dp"
+        android:layout_width="123dp"
+        android:layout_height="113dp"
         android:layout_marginLeft="8dp"
         android:src="@drawable/cisc" />
 
