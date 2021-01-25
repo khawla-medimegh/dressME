@@ -83,14 +83,16 @@
                     android:id="@+id/con_des"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="155dp"
+                    android:layout_marginStart="150dp"
                     android:layout_marginTop="40dp"
+                    android:layout_marginEnd="102dp"
                     android:layout_marginBottom="66dp"
                     android:paddingLeft="10dp"
                     android:text="robe courte"
                     android:textColor="#B7000000"
                     android:textSize="17dp"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
                 <TextView
