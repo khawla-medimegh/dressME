@@ -66,7 +66,7 @@
                 <Button
                     android:id="@+id/conf_btn"
                     android:layout_width="wrap_content"
-                    android:layout_height="39dp"
+                    android:layout_height="36dp"
                     android:layout_marginStart="200dp"
                     android:layout_marginTop="120dp"
                     android:layout_marginEnd="96dp"
